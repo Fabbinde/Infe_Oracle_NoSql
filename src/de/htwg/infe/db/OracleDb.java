@@ -10,4 +10,8 @@ public class OracleDb {
 		auth = new Authentification(host, port, store);
 		auth.init();
 	}
+	
+	public void inserKeyValue(String key, String value) {
+		
+	}
 }

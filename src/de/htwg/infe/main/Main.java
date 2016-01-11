@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import de.htwg.infe.db.BlogController;
 import de.htwg.infe.db.OracleDb;
 
 public class Main {
@@ -18,6 +19,11 @@ public class Main {
 		String store = readLine();
 		
 		OracleDb db = new OracleDb(host, port, store);
+		
+		BlogController controller = new BlogController(db);
+		controller.runExample();
+		
+		System.out.println("Beendet");
 		
 		
 	}
