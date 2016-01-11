@@ -15,4 +15,6 @@ bin/
 .project
 .classpath
 .settings/
+*.iml
+.idea/
 

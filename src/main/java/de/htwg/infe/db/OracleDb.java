@@ -11,7 +11,7 @@ public class OracleDb {
 		auth.init();
 	}
 	
-	public void inserKeyValue(String key, String value) {
+	public void insertKeyValue(String key, String value) {
 		
 	}
 }
