@@ -21,7 +21,7 @@ public class Authentification {
 		this.store = _store;
 	}
 	
-	public void init() {
+	public KVStore init() {
 		kconfig = new KVStoreConfig(store, host + ":" + port);
 		try {
 			kvstore = KVStoreFactory.getStore(kconfig);
@@ -34,6 +34,7 @@ public class Authentification {
 		}
 		isConnected = true;
 		System.out.println("Mit " + host + " verbunden!");
+		return kvstore;
 	}
 
 	public boolean isConnected() {

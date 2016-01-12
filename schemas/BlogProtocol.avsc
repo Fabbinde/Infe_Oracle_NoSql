@@ -1,0 +1,60 @@
+{
+  "protocol" : "Blog",
+  "namespace" : "de.htwg.infe.blog",
+  "types" : [ {
+    "type" : "record",
+    "name" : "User",
+    "fields" : [ {
+      "name" : "id",
+      "type" : "string"
+    }, {
+      "name" : "name",
+      "type" : "string"
+    }, {
+      "name" : "mail",
+      "type" : "string"
+    }, {
+      "name" : "bild",
+      "type" : "string"
+    } ]
+  }, {
+    "type" : "record",
+    "name" : "BlogEntry",
+    "fields" : [ {
+      "name" : "url",
+      "type" : "string"
+    }, {
+      "name" : "author",
+      "type" : "User"
+    }, {
+      "name" : "text",
+      "type" : "string",
+      "default" : "text"
+    }, {
+      "name" : "datum",
+      "type" : "long",
+      "default" : 0
+    }, {
+      "name" : "titel",
+      "type" : "string",
+      "default" : "title"
+    }, {
+      "name" : "tag",
+      "type" : {
+        "type" : "array",
+        "items" : "string"
+      }
+    } ]
+  }, {
+    "type" : "record",
+    "name" : "UserLikesBlogEntry",
+    "fields" : [ {
+      "name" : "user",
+      "type" : "User"
+    }, {
+      "name" : "blogEntry",
+      "type" : "BlogEntry"
+    } ]
+  } ],
+  "messages" : { }
+}

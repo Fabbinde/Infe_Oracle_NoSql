@@ -1,0 +1,11 @@
+{
+	"type" : "record",
+	"name" : "User",
+	"namespace" : "de.htwg.infe.blog",
+	"fields" : [
+		{"name" : "id", "type" : "string"},
+		{"name" : "name", "type" : "string"},
+		{"name" : "mail", "type" : "string"},
+		{"name" : "bild", "type" : "string"}
+	]
+}

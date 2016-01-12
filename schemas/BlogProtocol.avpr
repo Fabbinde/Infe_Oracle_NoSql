@@ -1,0 +1,8 @@
+@namespace("de.htwg.infe.blog")
+protocol Blog {
+import schema "User.avsc";
+import schema "BlogEntry.avsc";
+import schema "UserLikesBlogEntry.avsc";
+
+
+}

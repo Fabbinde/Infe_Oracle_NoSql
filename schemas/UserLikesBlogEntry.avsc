@@ -1,0 +1,9 @@
+{
+	"type" : "record",
+	"name" : "UserLikesBlogEntry",
+	"namespace" : "de.htwg.infe.blog",
+	"fields" : [
+		{"name" : "user", "type" : "User"},
+		{"name" : "blogEntry", "type" : "BlogEntry"}	
+	]
+}

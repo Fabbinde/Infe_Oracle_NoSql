@@ -12,11 +12,11 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Bitte Host angeben:");
-		String host = readLine();
+		String host = "Fab-Laptop";//readLine();
 		System.out.println("Bitte Port angeben:");
-		String port = readLine();
+		String port = "5000";//readLine();
 		System.out.println("Bitte Store angeben:");
-		String store = readLine();
+		String store = "kvstore";//readLine();
 		
 		OracleDb db = new OracleDb(host, port, store);
 		

@@ -1,0 +1,14 @@
+{
+	"type" : "record",
+	"name" : "BlogEntry",
+	"namespace" : "de.htwg.infe.blog",
+	"fields" : [
+		{"name" : "url", "type" : "string"},
+		{"name" : "author", "type" : "User"},
+		{"name" : "text", "type" : "string", "default" : "text"},
+		{"name" : "datum", "type" : "long", "default" : 0},
+		{"name" : "titel", "type" : "string", "default" : "title"},
+		{"name" : "tag", "type" : { "type" : "array", "items" : "string"}}
+	]
+	
+}
